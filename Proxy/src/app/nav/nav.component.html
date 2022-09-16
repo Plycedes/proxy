@@ -5,9 +5,9 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Navigation</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Feed</a>
-      <a mat-list-item href="#">Academics</a>
-      <a mat-list-item href="#">Results</a>
+      <a mat-list-item routerLink="/feed">Feed</a>
+      <a mat-list-item routerLink="/academics">Academics</a>
+      <a mat-list-item routerLink="/results">Results</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -23,5 +23,6 @@
       <span>Proxy</span>
     </mat-toolbar>
     <!-- Add Content Here -->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
